@@ -1,0 +1,89 @@
+<!-- services.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services — Masroof Hussain Designer</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><div class="brand-logo"></div><span>Masroof Hussain Designer</span></a>
+      <nav class="nav-links">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="services.html">Services</a>
+        <a data-nav href="gallery.html">Gallery</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-btn" data-menu-btn>Menu</button>
+    </div>
+    <div class="container mobile-nav" data-mobile-nav>
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="about.html">About</a>
+      <a data-nav href="services.html">Services</a>
+      <a data-nav href="gallery.html">Gallery</a>
+      <a data-nav href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2>Services</h2>
+      <p class="sub">Tailored offerings to suit your wardrobe and occasions.</p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Bespoke suits</h3>
+          <p>Full-canvas, half-canvas, or fused. Multiple lapel styles and linings.</p>
+        </article>
+        <article class="card">
+          <h3>Formal & ethnic</h3>
+          <p>Bandhgalas, sherwanis, waistcoats, and tuxedos tailored to your fit.</p>
+        </article>
+        <article class="card">
+          <h3>Business essentials</h3>
+          <p>Shirts, trousers, and blazers optimized for comfort and movement.</p>
+        </article>
+        <article class="card">
+          <h3>Occasion wear</h3>
+          <p>Wedding and event outfits with premium fabric curation.</p>
+        </article>
+        <article class="card">
+          <h3>Alterations</h3>
+          <p>Resizing, tapering, and rebalancing for a smarter silhouette.</p>
+        </article>
+        <article class="card">
+          <h3>Consultation</h3>
+          <p>Personal style guidance, fabric selection, and care recommendations.</p>
+        </article>
+      </div>
+
+      <div class="card" style="margin-top:20px;">
+        <h3>Pricing guidance</h3>
+        <p class="muted">Pricing depends on fabric, construction, and detailing. Get a quote via WhatsApp or book a fitting.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="contact.html">Request quote</a>
+          <a class="btn" href="contact.html">Book a fitting</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; align-items:center;">
+        <p>© <span id="year"></span> Masroof Hussain Designer — Custom Menswear</p>
+        <p>Follow: <a href="#">Instagram</a> · <a href="#">Facebook</a></p>
+      </div>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

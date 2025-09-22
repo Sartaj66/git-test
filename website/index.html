@@ -1,0 +1,90 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Masroof Hussain Designer — Custom Menswear</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <?!-- copy the shared header HTML here if no includes -->
+  
+
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <div class="brand-logo" aria-hidden="true"></div>
+        <span>Masroof Hussain Designer</span>
+      </a>
+      <nav class="nav-links">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="services.html">Services</a>
+        <a data-nav href="gallery.html">Gallery</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-btn" data-menu-btn>Menu</button>
+    </div>
+    <div class="container mobile-nav" data-mobile-nav>
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="about.html">About</a>
+      <a data-nav href="services.html">Services</a>
+      <a data-nav href="gallery.html">Gallery</a>
+      <a data-nav href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero">
+      <div class="hero-card">
+        <div class="eyebrow">Custom menswear</div>
+        <h1 class="h1">Timeless tailoring. Crafted for you.</h1>
+        <p class="lead">From classic suits to contemporary silhouettes, every garment is cut to your measure and finished by hand.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="contact.html">Book a fitting</a>
+          <a class="btn" href="gallery.html">View gallery</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <span class="hero-tag">Premium fabrics • Perfect fit • Personal service</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Featured services</h2>
+        <p class="sub">Precision, comfort, and a signature aesthetic.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Custom suits</h3>
+            <p>Two- and three-piece suits tailored to your posture and style preferences.</p>
+          </article>
+          <article class="card">
+            <h3>Shirts & kurtas</h3>
+            <p>Made-to-measure shirts and kurtas with refined collars, cuffs, and stitching.</p>
+          </article>
+          <article class="card">
+            <h3>Alterations</h3>
+            <p>Expert adjustments for a sharper drape and improved comfort.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; align-items:center;">
+        <p>© <span id="year"></span> Masroof Hussain Designer — Custom Menswear</p>
+        <p>Follow: <a href="#">Instagram</a> · <a href="#">Facebook</a></p>
+      </div>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
